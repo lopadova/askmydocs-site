@@ -156,7 +156,7 @@ export default function Hero() {
           {/* CTAs */}
           <div style={{ display: 'flex', gap: 12, marginTop: 30, flexWrap: 'wrap' }}>
             <a
-              href="https://padosoft.mintlify.app"
+              href="https://doc.askmydocs.padosoft.com"
               className="amd-btnp"
               target="_blank"
               rel="noreferrer"

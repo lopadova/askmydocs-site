@@ -63,7 +63,7 @@ export default function Nav() {
             <GitHubIcon size={16} />
           </a>
           <a
-            href="https://padosoft.mintlify.app"
+            href="https://doc.askmydocs.padosoft.com"
             className="amd-btnp"
             style={{ height: 34, fontSize: '13.5px', padding: '0 15px' }}
             target="_blank"
@@ -122,7 +122,7 @@ export default function Nav() {
               </a>
             );
           })}
-          <a href="https://padosoft.mintlify.app" className="amd-btnp" style={{ width: 'fit-content', marginTop: 8 }} target="_blank" rel="noreferrer">
+          <a href="https://doc.askmydocs.padosoft.com" className="amd-btnp" style={{ width: 'fit-content', marginTop: 8 }} target="_blank" rel="noreferrer">
             Get started
           </a>
         </nav>

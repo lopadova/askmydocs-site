@@ -4,7 +4,7 @@ const cols = [
   {
     label: 'Product',
     links: [
-      { text: 'Docs', href: 'https://padosoft.mintlify.app' },
+      { text: 'Docs', href: 'https://doc.askmydocs.padosoft.com' },
       { text: 'Architecture', href: '#architecture' },
       { text: 'Features', href: '#moats' },
       { text: 'Connectors', href: '#connectors' },
@@ -23,7 +23,7 @@ const cols = [
     label: 'Company',
     links: [
       { text: 'Padosoft', href: 'https://www.padosoft.com' },
-      { text: 'Support', href: 'https://padosoft.mintlify.app' },
+      { text: 'Support', href: 'https://doc.askmydocs.padosoft.com' },
       { text: 'GitHub org', href: 'https://github.com/padosoft' },
     ],
   },

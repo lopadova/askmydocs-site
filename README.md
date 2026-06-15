@@ -65,7 +65,7 @@ Extracted from the Padosoft Design System:
 ## Content sources
 
 - Product facts: `AskMyDocs/README.md` (the `lopadova/AskMyDocs` repo)
-- Links: docs → `https://padosoft.mintlify.app`, GitHub → `https://github.com/lopadova/AskMyDocs`
+- Links: docs → `https://doc.askmydocs.padosoft.com`, GitHub → `https://github.com/lopadova/AskMyDocs`
 
 ## License
 

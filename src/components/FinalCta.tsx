@@ -82,7 +82,7 @@ export default function FinalCta() {
 
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', marginTop: 28, flexWrap: 'wrap' }}>
             <a
-              href="https://padosoft.mintlify.app"
+              href="https://doc.askmydocs.padosoft.com"
               className="amd-btnp"
               target="_blank"
               rel="noreferrer"
