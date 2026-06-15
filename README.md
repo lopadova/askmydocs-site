@@ -46,7 +46,7 @@ bunx wrangler dev --local   # → http://localhost:8787
 bun run deploy    # wraps: wrangler deploy
 ```
 
-The `wrangler.jsonc` targets the `askmydocs-site` Worker on the Padosoft account. Set `cf-account-id` or pass `--account-id` as needed.
+The `wrangler.jsonc` targets the `askmydocs-site` Worker on the Padosoft account. Set `account_id` in `wrangler.jsonc` or pass `--account-id` as needed.
 
 ## Design tokens
 
