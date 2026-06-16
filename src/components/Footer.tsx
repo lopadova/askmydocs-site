@@ -6,8 +6,6 @@ const cols = [
     links: [
       { text: 'Docs', href: 'https://doc.askmydocs.padosoft.com' },
       { text: 'Architecture', href: '#architecture' },
-      { text: 'Features', href: '#moats' },
-      { text: 'Connectors', href: '#connectors' },
     ],
   },
   {
