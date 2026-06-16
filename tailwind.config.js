@@ -1,0 +1,107 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Padosoft Design System — near-black surfaces
+        void:     '#04050a',
+        base:     '#07090f',
+        surface:  '#0b0e16',
+        raised:   '#11151f',
+        elevated: '#161b27',
+        inset:    '#05070c',
+        // Neon cyan primary
+        'cyan-300': '#8efbe8',
+        'cyan-400': '#5cf7e0',
+        'cyan-500': '#2ff5d6',
+        'cyan-600': '#12d9bb',
+        'cyan-700': '#0bab95',
+        // Electric blue depth
+        'blue-300': '#8fc6ff',
+        'blue-400': '#5aabff',
+        'blue-500': '#2e9bff',
+        // Agent violet
+        'violet-400': '#a394ff',
+        'violet-500': '#7b6cff',
+        'violet-600': '#5a48e0',
+        // Semantic
+        success:  '#2ff5a8',
+        warning:  '#ffcf5c',
+        danger:   '#ff5c7a',
+        info:     '#2e9bff',
+        // Text
+        'text-hi':     '#eaf6f4',
+        'text-mid':    '#a3b4bb',
+        'text-low':    '#65787f',
+        'text-faint':  '#3c4a50',
+        'on-accent':   '#04130f',
+      },
+      fontFamily: {
+        display: ["'Space Grotesk'", "'Inter'", 'system-ui', 'sans-serif'],
+        sans:    ["'Inter'", 'system-ui', '-apple-system', "'Segoe UI'", 'sans-serif'],
+        mono:    ["'JetBrains Mono'", "'SFMono-Regular'", 'ui-monospace', 'monospace'],
+      },
+      borderRadius: {
+        xs:   '3px',
+        sm:   '6px',
+        md:   '10px',
+        lg:   '14px',
+        xl:   '20px',
+        '2xl':'28px',
+        pill: '999px',
+      },
+      boxShadow: {
+        xs:     '0 1px 2px rgba(0,0,0,0.5)',
+        sm:     '0 2px 8px rgba(0,0,0,0.45)',
+        md:     '0 8px 24px -6px rgba(0,0,0,0.6)',
+        lg:     '0 24px 60px -20px rgba(0,0,0,0.78)',
+        xl:     '0 40px 100px -30px rgba(0,0,0,0.85)',
+        card:   'inset 0 0 0 1px rgba(120,200,220,0.12), 0 18px 44px -24px rgba(0,0,0,0.8)',
+        'glow-xs': '0 0 8px rgba(47,245,214,0.30)',
+        'glow-sm': '0 0 14px rgba(47,245,214,0.38)',
+        'glow-md': '0 0 26px rgba(47,245,214,0.45)',
+        'glow-lg': '0 0 48px rgba(47,245,214,0.40)',
+        accent:  '0 0 0 1px rgba(47,245,214,0.40), 0 8px 30px -8px rgba(47,245,214,0.45)',
+        'blocked-dim': '0 0 0 1px rgba(255,92,122,0.4), 0 0 18px -4px rgba(255,92,122,0.5)',
+        'blocked-glow': '0 0 0 1px rgba(255,92,122,0.7), 0 0 30px -2px rgba(255,92,122,0.7)',
+      },
+      backgroundImage: {
+        'grad-signal': 'linear-gradient(135deg, #2ff5d6 0%, #2e9bff 100%)',
+        'grad-agent':  'linear-gradient(135deg, #5cf7e0 0%, #7b6cff 120%)',
+        'grad-aurora': 'radial-gradient(120% 120% at 0% 0%, rgba(47,245,214,0.18), transparent 55%), radial-gradient(120% 120% at 100% 0%, rgba(46,155,255,0.16), transparent 55%)',
+        'grad-panel':  'linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.00) 40%)',
+        'grad-wordmark': 'linear-gradient(110deg, #2ff5d6 0%, #7b6cff 42%, #5aabff 70%, #2ff5d6 100%)',
+        'grid-line': 'linear-gradient(rgba(120,200,220,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(120,200,220,0.05) 1px, transparent 1px)',
+        'grid-dot': 'radial-gradient(rgba(120,200,220,0.05) 1px, transparent 1px)',
+      },
+      transitionTimingFunction: {
+        'ease-out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
+        'ease-in-out-circ': 'cubic-bezier(0.65, 0, 0.35, 1)',
+        'spring': 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+      },
+      animation: {
+        'pulse-dot': 'pds-pulse 1.6s infinite',
+        'dash': 'amd-dash 2.4s linear infinite',
+        'pan-grad': 'amd-pan 9s linear infinite',
+        'fw-breathe': 'amd-fw 2.6s cubic-bezier(0.65,0,0.35,1) infinite',
+        'blocked': 'amd-blocked 3.2s cubic-bezier(0.65,0,0.35,1) infinite',
+        'caret': 'pds-caret 1s step-end infinite',
+        'rise': 'pds-rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both',
+      },
+      keyframes: {
+        'pds-pulse': { '0%,100%': { opacity: '1' }, '50%': { opacity: '0.45' } },
+        'amd-dash': { 'to': { strokeDashoffset: '-140' } },
+        'amd-pan': { 'to': { backgroundPosition: '260% 0' } },
+        'amd-fw': { '0%,100%': { opacity: '0.55', transform: 'scaleY(0.96)' }, '50%': { opacity: '1', transform: 'scaleY(1.04)' } },
+        'amd-blocked': { '0%,100%': { boxShadow: '0 0 0 1px rgba(255,92,122,0.4), 0 0 18px -4px rgba(255,92,122,0.5)' }, '50%': { boxShadow: '0 0 0 1px rgba(255,92,122,0.7), 0 0 30px -2px rgba(255,92,122,0.7)' } },
+        'pds-caret': { '0%,49%': { opacity: '1' }, '50%,100%': { opacity: '0' } },
+        'pds-rise': { 'from': { opacity: '0', transform: 'translateY(10px)' }, 'to': { opacity: '1', transform: 'translateY(0)' } },
+      },
+    },
+  },
+  plugins: [],
+};
